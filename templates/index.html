@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="../static/images/avatar.png" type="image/x-icon">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#projects").mouseenter(function(){
+    
+    $("#profile").fadeIn();
+  });
+  $("#projects").mouseleave(function(){
+    
+    $("#profile").fadeOut();
+  });
+}); -->
+<!-- </script> -->
+ 
+</head>
+
+   
+    <body class="bg-gradient-to-b text-white">
+        <!-- from-green-500 to-green-800  -->
+        <!-- Sticky container for navbar and profile image -->
+        <div class="sticky top-0 z-50">
+            <!-- Navigation menu -->
+            <nav class="bg-gradient-to-r from-blue-600 to-violet-500 py-2 fixed w-full top-0 left-0 z-50 h-20">
+                <div class="container flex justify-between items-center my-5">
+                    <div class="text-xl font-bold ml-40">
+                          Yashwanth's Portfolio
+                      </div>
+                    <div class="flex space-x-4">
+                        <a class="hover:bg-white text-white px-4 py-2 
+                                  no-underline transition duration-300 
+                                  bg-transparent hover:bg-gray-700"
+                            href="#about">About</a>
+                        <a class="hover:bg-white text-white px-4 py-2 
+                                  no-underline transition duration-300 
+                                  bg-transparent hover:bg-gray-700"
+                            href="#projects">Projects</a>
+                        <a class="hover:bg-white text-white px-4 py-2 
+                                  no-underline transition duration-300 
+                                  bg-transparent hover:bg-gray-700"
+                            href="#skills">Skills</a>
+                        <a class="hover:bg-white text-white px-4 py-2 
+                                  no-underline transition duration-300 
+                                  bg-transparent hover:bg-gray-700"
+                            href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Profile image -->
+            <!-- style="display: none;" -->
+            <div id="profile"  class="relative">
+                <div class="w-36 h-36 rounded-full bg-white absolute top-0 
+                            left-1/2 transform -translate-x-1/2 z-50">
+                    <img alt="imageofProfile" 
+                         class="w-36 h-36 rounded-full border-4 border-blue-500 "
+                         src=
+    "../static/images/avatar.png" />
+                </div>
+            </div> <!-- White circle for profile image -->
+        </div>
+    
+        <!-- Main content -->
+        <div id="about" class="mb-16 container mx-auto pt-20">
+            <!-- About section -->
+          <div class="flex flex-col md:flex-row justify-between">
+            <section id="about1"
+            class="w-1/2 h-80 m-20 justify-center text-center mt-20 relative 
+                   my-5 mb-16 px-4 py-4 rounded-lg shadow-2xl relative 
+                   overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-500">
+            <h2 class="text-2xl font-bold mb-4 text-center">
+                  About Geek
+              </h2>
+            <p class="text-base">
+                  Hi, I'm Geek, a passionate full-stack developer with a 
+                  focus on building scalable and responsive web applications. 
+                  I have extensive experience in front-end technologies 
+                  such as HTML, CSS, and JavaScript, along with expertise in 
+                  popular frameworks like React.js. On the back end, I specialize
+                in Node.js and Express.js for building robust server-side 
+                  applications. My goal is to leverage my  and creativity 
+                  to deliver innovative solutions that meet and exceed 
+                  client expectations.
+              </p>
+            <a href="https://reactfiles.com/mUJpUQcgroOlknA/preview" target="_blank"
+                class="inline-block mt-5 px-4 py-2 rounded-md bg-green-500 
+                       text-white hover:bg-green-600 transition duration-300">
+                  Resume
+              </a>
+        </section>
+        <div id="img" class="w-1/2">
+            <img src="../static/images/avatar.png" alt="">
+        </div>
+          </div>
+    
+            <!-- Projects section -->
+            <section id="projects"
+                class="m-20 rounded-2xl shadow-2xl mb-16 bg-gradient-to-r from-blue-600 to-indigo-500 text-white mb-8 px-4 py-10">
+                <h2 class="text-4xl font-bold mb-10 text-center">
+                      Projects
+                  </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+                    <!-- Project  -->
+                    <div
+                        class="bg-white text-black p-4 shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/blog.svg"
+                            alt="Travel Website" class="w-full h-auto">
+                        <h3 class="font-bold mt-4">Blog Website</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.
+                          </p>
+                    </div>
+                    <div
+                        class="bg-white p-4 text-black shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/chat-bot.svg"
+                            alt="Travel Website" class="project-image">
+                        <h3 class="font-bold mt-4">Chat Bot</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.</p>
+                    </div>
+                    <div
+                        class="bg-white p-4 text-black shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/image.svg"
+                            alt="Travel Website" class="project-image">
+                        <h3 class="font-bold mt-4">Image Tools</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.</p>
+                    </div>
+                    <div
+                        class="bg-white p-4 text-black shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/musicplayer.svg"
+                            alt="Travel Website" class="project-image">
+                        <h3 class="font-bold mt-4">Music Player</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.</p>
+                    </div>
+                    <div
+                        class="bg-white p-4  text-black shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/notes.svg"
+                            alt="Travel Website" class="project-image">
+                        <h3 class="font-bold mt-4">Notes APp</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.</p>
+                    </div>
+                    <div
+                        class="bg-white p-4 text-black shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/quotes.svg"
+                            alt="Travel Website" class="project-image">
+                        <h3 class="font-bold mt-4">Quotes Addicter</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.</p>
+                    </div>
+                    <div
+                        class="bg-white p-4 text-black shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/shop.svg"
+                            alt="Travel Website" class="project-image">
+                        <h3 class="font-bold mt-4">E-Commerce Website</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.</p>
+                    </div>
+                    <div
+                        class="bg-white p-4 text-black shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/todo.svg"
+                            alt="Travel Website" class="project-image">
+                        <h3 class="font-bold mt-4">ToDO App</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.</p>
+                    </div>
+                    <div
+                        class="bg-white p-4 text-black shadow rounded-xl overflow-hidden 
+                               transition-transform duration-300 transform 
+                               scale-100 hover:scale-110">
+                        <img src=
+    "../static/images/draw.svg"
+                            alt="Travel Website" class="project-image">
+                        <h3 class="font-bold mt-4">Draw.io</h3>
+                        <p class="text-sm leading-relaxed">
+                              A travel booking website that allows users to search for
+                            destinations, book flights, hotels, and plan their itinerary.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Skills section -->
+            <section id="skills"
+                class="m-20 p-10 mb-16 rounded-lg shadow-2xl text-white relative 
+                       overflow-hidden rounded mb-16 bg-gradient-to-r
+                       from-blue-600 to-indigo-500 text-white mb-8 px-4 py-10">
+                <h2 class="text-3xl font-bold mb-4">Skills</h2>
+                <!-- Skill progress bars -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <p class="font-bold">HTML</p>
+                        <div class="bg-gray-600 h-4 w-full rounded-full">
+                            <div class="bg-orange-400 h-full rounded-full w-4/5"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold">CSS</p>
+                        <div class="bg-gray-600 h-4 w-full rounded-full">
+                            <div class="bg-orange-400 h-full rounded-full w-4/5"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold">JavaScript</p>
+                        <div class="bg-gray-600 h-4 w-full rounded-full">
+                            <div class="bg-orange-400 h-full rounded-full w-4/5"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold">React.js</p>
+                        <div class="bg-gray-600 h-4 w-full rounded-full">
+                            <div class="bg-orange-400 h-full rounded-full w-4/5">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Node.js</p>
+                        <div class="bg-gray-600 h-4 w-full rounded-full">
+                            <div class="bg-orange-400 h-full rounded-full w-3/5"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Express.js</p>
+                        <div class="bg-gray-600 h-4 w-full rounded-full">
+                            <div class="bg-orange-400 h-full rounded-full" 
+                                 style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold">Flutter</p>
+                        <div class="bg-gray-600 h-4 w-full rounded-full">
+                            <div class="bg-orange-400 h-full rounded-full"  style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-bold">React Native</p>
+                        <div class="bg-gray-600 h-4 w-full rounded-full">
+                            <div class="bg-orange-400 h-full rounded-full" 
+                                 style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contact section -->
+         <div class="flex flex-col md:flex-row m-20 p-10 mb-16 rounded-2xl shadow-2xl text-white relative 
+         overflow-hidden mb-16 bg-gradient-to-b 
+         from-blue-600 to-indigo-500 text-white mb-8 px-4 py-10">
+         <div class="w-1/2">
+            <img src="../static/images/avatar.png" alt="">
+         </div>
+            <div class="lg:w-1/2 md:w-1/2  flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <h2 class="text-white text-2xl mb-1 font-medium title-font">Contact Me</h2>
+                <p class="leading-relaxed mb-5 text-white">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+               <form action="/add" method="post">
+                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-white">Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                  <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-white">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                  <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-white">Message</label>
+                    <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                  </div>
+                  <button type="submit" class="text-white bg-orange-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+               
+               </form>   <p class="text-xs text-center text-gray-500 mt-3">Get In Touch</p>
+
+              </div>
+            </div>
+         </div>
+        </div>
+    
+    
+</body>
+</html>
